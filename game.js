@@ -141,14 +141,14 @@ function triggerCellElement(elem, value) {
     if (value !== 0) elem.innerHTML = value;
     switch (value) {
         case 0: break;
-        case 1: elem.style.color = "#22d";
-        case 2: elem.style.color = "#2a2";
-        case 3: elem.style.color = "#e22";
-        case 4: elem.style.color = "#009";
-        case 5: elem.style.color = "#900";
-        case 6: elem.style.color = "#29d";
-        case 7: elem.style.color = "#222";
-        case 8: elem.style.color = "#999";
+        case 1: elem.style.color = "#22d"; break;
+        case 2: elem.style.color = "#2a2"; break;
+        case 3: elem.style.color = "#e22"; break;
+        case 4: elem.style.color = "#009"; break;
+        case 5: elem.style.color = "#900"; break;
+        case 6: elem.style.color = "#29d"; break;
+        case 7: elem.style.color = "#222"; break;
+        case 8: elem.style.color = "#999"; break;
     }
 }
 
