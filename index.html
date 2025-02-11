@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MinesweeperJS</title>
+    <title>Minesweeper JS</title>
+    <link rel="stylesheet" href="master.css">
 </head>
+
 <body>
+    <form action="#" onsubmit="return setup()" id="setupForm">
+        <div class="grid">
+            <label for="rows">Rows</label>
+            <input type="number" name="rows" id="rows" min="6" max="30" value="10" />
+            <label for="columns">Columns</label>
+            <input type="number" name="columns" id="columns" min="6" max="30" value="10" />
+            <label for="mines">Mines</label>
+            <input type="number" name="mines" id="mines" min="5" max="899" value="10" />
+        </div>
+
+        <input type="submit" value="Start game" />
+    </form>
+
+    <div id="output"></div>
+
     <table id="board"></table>
-    <button id="resetBtn">Reset</button>
+
+    <script src="game.js"></script>
 </body>
+
 </html>

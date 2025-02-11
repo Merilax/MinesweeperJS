@@ -1,0 +1,43 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+table {
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+td {
+    line-height: 0;
+    text-align: center;
+    align-content: center;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.grid {
+    margin: 1em 0;
+    display: grid;
+    gap: .5rem;
+    grid-template-columns: 10vw 10vw;
+}
+
+.cellHidden {
+    background-color: #0005;
+    box-shadow: 0 0 5px inset #fff;
+}
+
+.cellShown {
+    background-color: #0002;
+}
+
+.cellBombShownLose {
+    background-color: #d66;
+    box-shadow: 0 0 5px inset #fff;
+}
+.cellBombShownWin {
+    background-color: #4d6;
+    box-shadow: 0 0 5px inset #fff;
+}
